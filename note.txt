@@ -1,0 +1,21 @@
+aos site 
+DevUl
+
+
+what is decorator?
+how can we import a decorator in a project
+
+def Swap(fn):
+  def wrapper(a,b):
+     if(a<b):
+         a,b=b,a
+      else:
+         return fn(a,b)
+  return wrapper
+
+@Swap
+def Sub(a,b)
+  return a-b
+we can inplement a function to the another fn without changing the function body is known as decorator
+
+in class we implement a decorator by giving mwthod decorator
